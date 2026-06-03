@@ -1,0 +1,5 @@
+﻿# Projeto de Livraria com MVC DAO BO
+
+Atividade de Padroes de Projeto.
+
+Repositorio separado a partir de $Owner/Faculdade-TSI, pasta $SourceSubdir.
