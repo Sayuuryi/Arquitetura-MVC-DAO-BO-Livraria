@@ -1,14 +1,10 @@
 package br.sayu.livraria.controller;
-
 import br.sayu.livraria.bo.*;
 import br.sayu.livraria.model.Livro;
 import java.util.List;
-
 public class BibliotecaController {
-
     private LivroBO livroBO = new LivroBO();
     private EmprestimoBO emprestimoBO = new EmprestimoBO();
-
     public String cadastrarLivro(String titulo, String autor) {
         try {
             livroBO.cadastrar(titulo, autor);
@@ -17,11 +13,9 @@ public class BibliotecaController {
             return e.getMessage();
         }
     }
-
     public List<Livro> listarDisponiveis() {
         return livroBO.listarDisponiveis();
     }
-
     public String emprestarLivro(int id, String leitor) {
         try {
             emprestimoBO.realizarEmprestimo(id, leitor);
@@ -30,7 +24,6 @@ public class BibliotecaController {
             return e.getMessage();
         }
     }
-
     public String devolverLivro(int id) {
         try {
             emprestimoBO.devolverLivro(id);
